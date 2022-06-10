@@ -10,15 +10,30 @@
 </head>
 <body>
     <header><h1>Game</h1></header>
-    <div id="game-area">
-        <button id="rock" data-type="submit" game-type="rock"> 
+    <div class="game-area">
+        <button id="r" class="rock" data-type="submit" game-type="rock"> 
            <img src="assets/images/hand-rock-fontawesome.JPG" alt="rock"> 
         </button>
-        <button id="scissors" data-type="submit" game-type="scissors">
+        <button id="s" class="scissors" data-type="submit" game-type="scissors">
             <img src="assets/images/hand-scissors-fontawesome.JPG" alt="scissors">
         </button>
     </div>
-    <footer></footer>
+    <div class="choice-area">
+        <div class="hands">
+            <img class= "player-hand" src="assets/images/hand-rock-fontawesome.JPG" alt="player">
+            <img class= "computer-hand" src="assets/images/hand-rock-fontawesome.JPG" alt="computer">
+        </div>
+    </div>
+    <footer>
+        <div class="score-area">
+            <div class="player-score">
+                <h2>Your score: <span id="player-score">0</span></h2>
+            </div>
+            <div class="computer-score">
+                <h2>Computer score: <span id="computer-score">0</span></h2>
+            </div>
+        </div>
+    </footer>
 
 <script src="assets/js/script.js"></script>
 </body>
